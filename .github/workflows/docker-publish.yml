@@ -30,7 +30,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: h0liday/dockerfile-practice # change to your image
+          images: h0liday/dsci310-ia3-holiday-sean-docker
           tags: |
             type=raw, value={{sha}},enable=${{github.ref_type != 'tag' }}
             type=raw, value=latest
